@@ -103,3 +103,4 @@ Model Training: Utilized DecisionTreeClassifier with varying depths (1 to 20) to
 Performance Metrics: Evaluated models based on training and test accuracy, as well as F1 scores.
 Validation: Identified the best model based on maximum test accuracy achieved.
 We visualize decision tree at the best depth.
+![output2](https://github.com/user-attachments/assets/bc71ded6-509e-4154-a04e-e4b7e0603b75)
