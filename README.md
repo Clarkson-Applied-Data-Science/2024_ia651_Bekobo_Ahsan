@@ -94,5 +94,12 @@ X Variables: Gender, Married, Education, Self_Employed, Property_Area, Credit_Hi
 Y Variable: Loan_Status (Binary classification: Y/N)
 Observations:
 
+# Model training
 
-Feature Distributions: Notably, features like Credit_History and Property_Area could strongly influence loan approval decisions due to their distributions and relationships with Loan_Status.
+Decision Tree Classifier:
+Starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries. it also gives a baseline to compare other models
+
+Model Training: Utilized DecisionTreeClassifier with varying depths (1 to 20) to find optimal max_depth.
+Performance Metrics: Evaluated models based on training and test accuracy, as well as F1 scores.
+Validation: Identified the best model based on maximum test accuracy achieved.
+We visualize decision tree at the best depth.
