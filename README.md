@@ -80,7 +80,7 @@ LoanAmount and Dependents also show noticeable skewness, requiring potential tra
 Showed imbalances in all categories more males than females, more graduates than non-graduates) but it reflects the actual world
 Class Distribution of Loan_Status: The dataset shows a class imbalance towards loan approvals (Y), which will be addressed during model training using Smote.
 
-
+![Screenshot 2024-07-24 050152](https://github.com/user-attachments/assets/f0f59f65-c587-4f97-8a81-bbc123a9a4ba)
 ## Correlation Analysis
 Correlation Matrix: Visualized to identify relationships between numerical variables.
 Positive correlations observed between income levels and loan amounts.
@@ -96,19 +96,53 @@ Top features for each principal component were identified, showing which variabl
 ![Screenshot 2024-07-24 000145](https://github.com/user-attachments/assets/dba42b81-a005-4961-842c-e85690332355)
 
 
+
+
+# Model Selection and evaluation metrics
 X and Y Variables:
 
 X Variables: Gender, Married, Education, Self_Employed, Property_Area, Credit_History, Loan_Amount_Term, ApplicantIncome, CoapplicantIncome, LoanAmount, Dependents
 Y Variable: Loan_Status (Binary classification: Y/N)
-Observations:
+
+The dataset was split into training (80%) and test (20%) sets using stratified sampling to maintain class distribution.
+
+
+Four  different models were selected: Decision Tree Logistic Regression, SVC with radial basis function kernel, and Random Forest Classifier.
+
+starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries. it also gives a baseline to compare other models and the importance of hyperparameters on evaluation metrics
+
+Each of the other three model was trained using a pipeline that included standard scaling of features and hyperparameter tuning using GridSearchCV with different cross-validation strategies (StratifiedKFold and KFold with 5 folds).
+
+To evaluate our model we used: Accuracy,F1-score,Confusion Matrix, ROC Curve, Receiver Operating Characteristic (ROC) curve and Area Under the Curve (AUC) were plotted to evaluate the trade-off between True Positive Rate (Sensitivity) and False Positive Rate (1 - Specificity).
 
 # Model training
-
 Decision Tree Classifier:
-Starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries. it also gives a baseline to compare other models
+Starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries. it also gives a baseline to compare other models and the importance of hyperparameters on evaluation metrics
 
 Model Training: Utilized DecisionTreeClassifier with varying depths (1 to 20) to find optimal max_depth.
 Performance Metrics: Evaluated models based on training and test accuracy, as well as F1 scores.
 Validation: Identified the best model based on maximum test accuracy achieved.
 We visualize decision tree at the best depth.
 ![output2](https://github.com/user-attachments/assets/bc71ded6-509e-4154-a04e-e4b7e0603b75)
+
+To address the challenge of class imbalance in the loan approval prediction dataset, we applied SMOTE, a widely used technique for over-sampling the minority class by generating synthetic samples. Here's an overview of the SMOTE process and its impact on model performance:
+
+## SMOTE Process
+SMOTE works by generating synthetic examples rather than simply duplicating existing ones. This approach helps in balancing the class distribution and improving the model's ability to learn from the minority class examples. Here are the steps we followed:
+
+Data Preparation:
+
+Split the original dataset into training (70%) and testing (30%) sets using train_test_split.
+Applying SMOTE:
+
+Used the SMOTE function from imblearn.over_sampling module to over-sample the minority class (True - approved loans) in the training set only (X_train, y_train).
+
+
+
+## Conclusion and Recommendations
+Findings:
+hyperparameters does not always increase performance. The Decision Tree model at depth 3 balanced simplicity with performance effectively.
+Logistic Regression and SVC models demonstrated competitive performance with optimal parameter tuning.
+
+Recommendations:
+Model Deployment: Consider deploying the Decision Tree model (depth 3) for simplicity and good performance unless higher interpretability is needed.
