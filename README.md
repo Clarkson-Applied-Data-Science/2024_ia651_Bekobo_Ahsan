@@ -3,7 +3,9 @@ Code for 2024_ia651_Bekobo_Ahsan
 #  Predictive Modeling of Loan Approval Status: A Machine Learning Approach
 ![Screenshot 2024-07-22 183831](https://github.com/user-attachments/assets/a2a8efaf-be86-4637-b4cd-941d909564b1)
 
+# Project overview
 
+The Loan Approval Prediction project aims to analyze a dataset containing information about loan applicants and their respective loan approval outcomes. The dataset provides valuable insights into various factors that influence the decision-making process of loan approvals. By leveraging data exploration, statistical analysis, and predictive modeling techniques, this project seeks to understand the patterns and relationships within the data to develop a predictive model for loan approval status.
 ## Dataset
 The dataset used in this project is sourced from Kaggle, "LoanApprovalPrediction.csv". It contains information about loan applicants, including demographic data (gender, marital status), financial details (income, loan amount), and credit history. The dataset consists of 598 entries and 13 columns after removing duplicates.
 
@@ -35,21 +37,29 @@ Property_Area: Area where the property to be purchased is located (Urban/Semiurb
 
 Target varaiable is Loan_Status: Loan approval status (Y = Yes, N = No)
 
-##Purpose and Prediction
+# Purpose and Prediction
 The goal of this project is to predict whether a loan application will be approved (Loan_Status) based on various applicant features. This prediction is crucial for financial institutions to automate and streamline the loan approval process, ensuring efficient use of resources and improving customer satisfaction.
 
-##Process Overview
+## Process Overview
 The project involved several stages:
 Graphical Analysis
+
+
+
+
+
+# Data Exploration
+## Data Visualization
 Histograms and Boxplots: Histograms and boxplots were used to visualize the distribution and spread of numerical features such as ApplicantIncome, CoapplicantIncome, and LoanAmount. 
+
 
 Countplots: Countplots were employed to explore the distribution of categorical features like Gender, Married, Education, Self_Employed, Property_Area, and Credit_History with respect to loan approval status (Loan_Status). These plots revealed insights into the distribution of applicants across different categories and their respective loan approval rates.
 Scatterplots to observe x y relationships between quantitatives variables.
 
 
 
-##EDA Insights
-
+Data Cleaning
+Data Preprocessing
 Missing Values
 Missing values were handled as follows:
 
