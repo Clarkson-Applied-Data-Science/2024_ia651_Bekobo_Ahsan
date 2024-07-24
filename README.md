@@ -56,6 +56,7 @@ Histograms and Boxplots: Histograms and boxplots were used to visualize the dist
 Countplots: Countplots were employed to explore the distribution of categorical features like Gender, Married, Education, Self_Employed, Property_Area, and Credit_History with respect to loan approval status (Loan_Status). These plots revealed insights into the distribution of applicants across different categories and their respective loan approval rates.
 Scatterplots to observe x y relationships between quantitatives variables.
 
+![Screenshot 2024-07-23 235152](https://github.com/user-attachments/assets/a46f6507-96a7-4f58-8901-b973c4966ee6) 
 
 
 Data Cleaning
