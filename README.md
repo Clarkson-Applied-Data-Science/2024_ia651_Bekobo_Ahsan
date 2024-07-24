@@ -70,7 +70,7 @@ After imputation, the dataset was verified to have no missing values (loan.isna(
 ![Screenshot 2024-07-23 235949](https://github.com/user-attachments/assets/efc6f855-62ea-46d1-bcbe-c2f469b55918)
 
 
-Data Preprocessing
+## Data Preprocessing
 Distribution of Features
 Numerical Features:
 
@@ -80,15 +80,17 @@ Categorical Features:
 
 Showed imbalances in all categories more males than females, more graduates than non-graduates) but it reflects the actual world
 
-Correlation Analysis
+## Correlation Analysis
 Correlation Matrix: Visualized to identify relationships between numerical variables.
 Positive correlations observed between income levels and loan amounts.
 ![output](https://github.com/user-attachments/assets/2be28ea7-5106-4712-863b-1e80cfdb83bb)
 
-Feature Importance
+
 Principal Component Analysis (PCA): Used to identify key features contributing to variance.
+
 Top features for each principal component were identified, showing which variables have the most influence.
-![Screenshot 2024-07-23 235949](https://github.com/user-attachments/assets/efc6f855-62ea-46d1-bcbe-c2f469b55918)
+
+
 Class Distribution of Loan_Status: The dataset shows a class imbalance towards loan approvals (Y), which may require addressing during model training.
 X and Y Variables:
 
