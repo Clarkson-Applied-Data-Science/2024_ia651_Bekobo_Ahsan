@@ -56,19 +56,21 @@ Histograms and Boxplots: Histograms and boxplots were used to visualize the dist
 Countplots: Countplots were employed to explore the distribution of categorical features like Gender, Married, Education, Self_Employed, Property_Area, and Credit_History with respect to loan approval status (Loan_Status). These plots revealed insights into the distribution of applicants across different categories and their respective loan approval rates.
 Scatterplots to observe x y relationships between quantitatives variables.
 
-![Screenshot 2024-07-23 235152](https://github.com/user-attachments/assets/a46f6507-96a7-4f58-8901-b973c4966ee6) 
+![Screenshot 2024-07-23 235152](https://github.com/user-attachments/assets/a46f6507-96a7-4f58-8901-b973c4966ee6) ![image](https://github.com/user-attachments/assets/5ba7a486-f508-42ca-a9db-8586989d0d43)
 
 
-Data Cleaning
-Data Preprocessing
-Missing Values
+## Data Cleaning
+we dropped duplicates and handles missing values. Outliers were not removed as they
+
 Missing values were handled as follows:
-
 Loan_Amount_Term: Imputed with the mode (most frequent term).
 LoanAmount: Imputed with the mean.
 Credit_History and Dependents: Imputed with the mode.
 After imputation, the dataset was verified to have no missing values (loan.isna().sum()).
 
+
+
+Data Preprocessing
 Distribution of Features
 Numerical Features:
 
