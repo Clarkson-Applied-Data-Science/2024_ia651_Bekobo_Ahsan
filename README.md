@@ -71,14 +71,15 @@ After imputation, the dataset was verified to have no missing values (loan.isna(
 
 
 ## Data Preprocessing
-Distribution of Features
+-Distribution of Features
 Numerical Features:
 
 ApplicantIncome and CoapplicantIncome exhibit high skewness.
 LoanAmount and Dependents also show noticeable skewness, requiring potential transformations for modeling.
-Categorical Features:
-
+-Categorical Features:
 Showed imbalances in all categories more males than females, more graduates than non-graduates) but it reflects the actual world
+Class Distribution of Loan_Status: The dataset shows a class imbalance towards loan approvals (Y), which will be addressed during model training using Smote.
+
 
 ## Correlation Analysis
 Correlation Matrix: Visualized to identify relationships between numerical variables.
@@ -88,10 +89,13 @@ Positive correlations observed between income levels and loan amounts.
 
 Principal Component Analysis (PCA): Used to identify key features contributing to variance.
 
+
+![Screenshot 2024-07-24 045705](https://github.com/user-attachments/assets/faa9e06c-530a-482e-9ada-093794711db1)
+
 Top features for each principal component were identified, showing which variables have the most influence.
+![Screenshot 2024-07-24 000145](https://github.com/user-attachments/assets/dba42b81-a005-4961-842c-e85690332355)
 
 
-Class Distribution of Loan_Status: The dataset shows a class imbalance towards loan approvals (Y), which may require addressing during model training.
 X and Y Variables:
 
 X Variables: Gender, Married, Education, Self_Employed, Property_Area, Credit_History, Loan_Amount_Term, ApplicantIncome, CoapplicantIncome, LoanAmount, Dependents
