@@ -147,7 +147,7 @@ Applying SMOTE:
 
 Used the SMOTE function from imblearn.over_sampling module to over-sample the minority class (True - approved loans) in the training set only (X_train, y_train).
 
-## Results and Metrics Summary:
+## Overall Results and Metrics Summary:
 ## Conclusion and Recommendations
 Findings:
 hyperparameters does not always increase performance. The Decision Tree model at depth 3 balanced simplicity with performance effectively.
