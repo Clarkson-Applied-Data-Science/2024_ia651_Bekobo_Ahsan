@@ -113,10 +113,11 @@ starting with a Decision Tree model not only provides a foundational understandi
 
 Each of the other three model was trained using a pipeline that included standard scaling of features and hyperparameter tuning using GridSearchCV with different cross-validation strategies (StratifiedKFold and KFold with 5 folds).
 
-To evaluate our model we used: Accuracy,F1-score,Confusion Matrix, ROC Curve, Receiver Operating Characteristic (ROC) curve and Area Under the Curve (AUC) were plotted to evaluate the trade-off between True Positive Rate (Sensitivity) and False Positive Rate (1 - Specificity).
+## Evaluation Metrics:
+To evaluate our model we used: Accuracy,F1-score, Recall, Precison, Confusion Matrix, ROC Curve, Receiver Operating Characteristic (ROC) curve and Area Under the Curve (AUC) were plotted to evaluate the trade-off between True Positive Rate (Sensitivity) and False Positive Rate (1 - Specificity).
 
 # Model training
-Decision Tree Classifier:
+## Decision Tree Classifier:
 Starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries. it also gives a baseline to compare other models and the importance of hyperparameters on evaluation metrics
 
 Model Training: Utilized DecisionTreeClassifier with varying depths (1 to 20) to find optimal max_depth.
@@ -125,9 +126,18 @@ Validation: Identified the best model based on maximum test accuracy achieved.
 We visualize decision tree at the best depth.
 ![output2](https://github.com/user-attachments/assets/bc71ded6-509e-4154-a04e-e4b7e0603b75)
 
-To address the challenge of class imbalance in the loan approval prediction dataset, we applied SMOTE, a widely used technique for over-sampling the minority class by generating synthetic samples. Here's an overview of the SMOTE process and its impact on model performance:
+## Decision Tree with Hyperparameters and cross-validation
+
+
+
+## Pipeline Construction and Hyperparameter Tuning for lm, SVM, RF:
+
+The introduction of streamlined pipelines for Logistic Regression, SVM, and the Random Forest Classifier proved to be monumental in refining the preprocessing and model fitting processes.
+As a standout success, the advanced grid search with cross-validation was a critical step in fine-tuning the hyperparameters for each remarkable model.
 
 ## SMOTE Process
+To address the challenge of class imbalance in the loan approval prediction dataset, we applied SMOTE, a widely used technique for over-sampling the minority class by generating synthetic samples. Here's an overview of the SMOTE process and its impact on model performance:
+
 SMOTE works by generating synthetic examples rather than simply duplicating existing ones. This approach helps in balancing the class distribution and improving the model's ability to learn from the minority class examples. Here are the steps we followed:
 
 Data Preparation:
@@ -137,8 +147,7 @@ Applying SMOTE:
 
 Used the SMOTE function from imblearn.over_sampling module to over-sample the minority class (True - approved loans) in the training set only (X_train, y_train).
 
-
-
+## Results and Metrics Summary:
 ## Conclusion and Recommendations
 Findings:
 hyperparameters does not always increase performance. The Decision Tree model at depth 3 balanced simplicity with performance effectively.
