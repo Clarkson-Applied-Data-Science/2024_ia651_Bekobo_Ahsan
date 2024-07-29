@@ -135,6 +135,32 @@ We visualize decision tree at the best depth.
 The introduction of streamlined pipelines for Logistic Regression, SVM, and the Random Forest Classifier proved to be monumental in refining the preprocessing and model fitting processes.
 As a standout success, the advanced grid search with cross-validation was a critical step in fine-tuning the hyperparameters for each remarkable model.
 
+
+1. Best Model Hyperparameters
+Logistic Regression
+
+Best Score: 0.8060
+Best Parameters:
+logistic__C: 0.1
+logistic__penalty: 'l1'
+
+Support Vector Classifier (SVC)
+
+Best Score: 0.8077
+
+Best Parameters:
+svc__C: 1
+svc__degree: 1
+svc__gamma: 'scale'
+svc__kernel: 'linear'
+Random Forest Classifier
+
+Best Score: 0.8094
+Best Parameters:
+rf__n_estimators: 100
+rf__max_depth: 10
+rf__min_samples_split: 10
+rf__min_samples_leaf: 4
 ## SMOTE Process
 To address the challenge of class imbalance in the loan approval prediction dataset, we applied SMOTE, a widely used technique for over-sampling the minority class by generating synthetic samples. Here's an overview of the SMOTE process and its impact on model performance:
 
