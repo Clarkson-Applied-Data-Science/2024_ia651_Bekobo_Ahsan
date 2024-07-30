@@ -161,6 +161,8 @@ rf__n_estimators: 100
 rf__max_depth: 10
 rf__min_samples_split: 10
 rf__min_samples_leaf: 4
+
+All three models achieved the same accuracy, precision and recall 
 ## SMOTE Process
 To address the challenge of class imbalance in the loan approval prediction dataset, we applied SMOTE, a widely used technique for over-sampling the minority class by generating synthetic samples. Here's an overview of the SMOTE process and its impact on model performance:
 
@@ -175,6 +177,14 @@ Used the SMOTE function from imblearn.over_sampling module to over-sample the mi
 # Pipeline Construction and Hyperparameter Tuning for lm, SVM, RF, DT:
 Pipelines were defined for each classifier to streamline the training and evaluation process.The best KFold strategy for each classifier was determined through grid search.
 ## Overall Results and Metrics Summary:
+
+A plot of the performance metrics for each model.
+
+A bar plot of the accuracy for each model.
+
+
+
+
 ## Conclusion and Recommendations
 Findings:
 hyperparameters does not always increase performance. The Decision Tree model at depth 3 balanced simplicity with performance effectively.
