@@ -63,9 +63,9 @@ Scatterplots to observe x y relationships between quantitatives variables.
 we dropped duplicates and handles missing values. Outliers were not removed as they
 
 Missing values were handled as follows:
-Loan_Amount_Term: Imputed with the mode (most frequent term).
-LoanAmount: Imputed with the mean.
-Credit_History and Dependents: Imputed with the mode.
+Loan_Amount_Term: Imputed 14 missing variables with the mode (most frequent term).
+LoanAmount: Imputed 21 variables with the median to prevent skewed variables.
+Credit_History and Dependents: Imputed 12 missing dependent variables and 49 credit history missing with the mode of each category.
 After imputation, the dataset was verified to have no missing values (loan.isna().sum()).
 ![Screenshot 2024-07-23 235949](https://github.com/user-attachments/assets/efc6f855-62ea-46d1-bcbe-c2f469b55918)
 
@@ -172,7 +172,8 @@ Split the original dataset into training (70%) and testing (30%) sets using trai
 Applying SMOTE:
 
 Used the SMOTE function from imblearn.over_sampling module to over-sample the minority class (True - approved loans) in the training set only (X_train, y_train).
-
+# Pipeline Construction and Hyperparameter Tuning for lm, SVM, RF, DT:
+Pipelines were defined for each classifier to streamline the training and evaluation process.The best KFold strategy for each classifier was determined through grid search.
 ## Overall Results and Metrics Summary:
 ## Conclusion and Recommendations
 Findings:
