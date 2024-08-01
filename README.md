@@ -190,12 +190,28 @@ Used the SMOTE function from imblearn.over_sampling module to over-sample the mi
 Pipelines were defined for each classifier to streamline the training and evaluation process.The best KFold strategy for each classifier was determined through grid search. This time we added Decision Tree to observe the impact of a balanced dataset on all the models cited.
 # Results and Metrics Summary:
 
-A plot of the performance metrics for each model.
+A Confusion Matrix and Roc curve for each model.
 
-A bar plot of the accuracy for each model.
+![Screenshot 2024-08-01 092435](https://github.com/user-attachments/assets/435072e5-7b3e-4a2b-a3d7-69f97296e9ca)
+![Screenshot 2024-08-01 092446](https://github.com/user-attachments/assets/aae95378-0d64-4f51-b725-15612cbcaf11)
+![Screenshot 2024-08-01 092500](https://github.com/user-attachments/assets/81b8aa96-1306-46dd-b36d-6203fec82ab7)
+![Screenshot 2024-08-01 092508](https://github.com/user-attachments/assets/1a901744-81d7-4ad7-8b0a-a9c27f76fc88)
+![Screenshot 2024-08-01 092602](https://github.com/user-attachments/assets/952abfce-972c-4ea5-adb1-2856ba270801)
+![Screenshot 2024-08-01 092611](https://github.com/user-attachments/assets/a193c432-4632-44cf-8b89-7d8765084f95)
+![Screenshot 2024-08-01 093026](https://github.com/user-attachments/assets/13bd58cc-aa39-4a17-9151-bed7e3718661)
+
+A bar plot of the accuracy for each model and performance graph displaying all metrics.
 
 
+![Screenshot 2024-08-01 093034](https://github.com/user-attachments/assets/cd7b396a-99b5-42a2-a7d6-2e37f76b5386)
+![Screenshot 2024-08-01 093057](https://github.com/user-attachments/assets/c609b631-93bb-4484-8b19-05511b43b467)
+![Screenshot 2024-08-01 093114](https://github.com/user-attachments/assets/e41e3359-cb95-4be6-b3e3-9dd43b4a6fea)
 
+## Testing data
+![Screenshot 2024-08-01 113304](https://github.com/user-attachments/assets/4164ae55-20c7-4a7a-93f7-a81df5b88301)
+
+Prediction vs Actual
+![Screenshot 2024-08-01 105406](https://github.com/user-attachments/assets/ae5113bd-27c7-4c36-b018-c9124a1eb70e)
 
 ## Conclusion and Recommendations
 Findings:
