@@ -65,7 +65,7 @@ we dropped duplicates and handles missing values. Outliers were not removed as t
 Missing values were handled as follows:
 Loan_Amount_Term: Imputed 14 missing variables with the mode (most frequent term).
 LoanAmount: Imputed 21 variables with the median to prevent skewed variables.
-Credit_History and Dependents: Imputed 12 missing dependent variables and 49 credit history missing with the mode of each category.
+Dependents: Imputed 12 missing dependent variables and Credit_History: 49 credit history missing with the mode of each category.
 After imputation, the dataset was verified to have no missing values (loan.isna().sum()).
 ![Screenshot 2024-07-23 235949](https://github.com/user-attachments/assets/efc6f855-62ea-46d1-bcbe-c2f469b55918)
 
