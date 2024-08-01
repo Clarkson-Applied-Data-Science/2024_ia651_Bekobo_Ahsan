@@ -207,10 +207,13 @@ A bar plot of the accuracy for each model and performance graph displaying all m
 ![Screenshot 2024-08-01 093057](https://github.com/user-attachments/assets/c609b631-93bb-4484-8b19-05511b43b467)
 ![Screenshot 2024-08-01 093114](https://github.com/user-attachments/assets/e41e3359-cb95-4be6-b3e3-9dd43b4a6fea)
 
-## Testing data
+# Testing data 
+## Dataset
+
+We created random entries to test our model
 ![Screenshot 2024-08-01 113304](https://github.com/user-attachments/assets/4164ae55-20c7-4a7a-93f7-a81df5b88301)
 
-# Model building on test data, Results and comparison
+## Model building on test data, Results and comparison
 Prediction vs Actual
 ![Screenshot 2024-08-01 105406](https://github.com/user-attachments/assets/ae5113bd-27c7-4c36-b018-c9124a1eb70e)
 
