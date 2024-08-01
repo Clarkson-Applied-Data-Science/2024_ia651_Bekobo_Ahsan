@@ -162,13 +162,18 @@ rf__max_depth: 10
 rf__min_samples_split: 10
 rf__min_samples_leaf: 4
 
-Accuracy seems similar accross the three models
+# Results and Metrics
+Accuracy seems similar accross for logistic and SVC Model. 
+
 
 ![Screenshot 2024-08-01 102253](https://github.com/user-attachments/assets/4a42ef48-90d7-4725-818d-92d435d1d539)
-![Screenshot 2024-08-01 102308](https://github.com/user-attachments/assets/fe450d77-482a-44a2-a436-1d1952b9c780)
-![Screenshot 2024-08-01 102324](https://github.com/user-attachments/assets/29a892e8-826c-44da-b9a6-1050accf5d7e)
 
-only Roc could be used to make a decision on the best model. ROC is particularly helpful for binary classifications as it evaluates the model accross all thresholds
+This is a bar plot displaying the accuracy for each model.
+![Screenshot 2024-08-01 102324](https://github.com/user-attachments/assets/29a892e8-826c-44da-b9a6-1050accf5d7e)
+![Screenshot 2024-08-01 102308](https://github.com/user-attachments/assets/fe450d77-482a-44a2-a436-1d1952b9c780)
+
+
+Judging the models therefore requires another metrics . Roc was used to make a decision on the best model. ROC is particularly helpful for binary classifications as it evaluates the model accross all thresholds
 ## SMOTE Process
 To address the challenge of class imbalance in the loan approval prediction dataset, we applied SMOTE, a widely used technique for over-sampling the minority class by generating synthetic samples. Here's an overview of the SMOTE process and its impact on model performance:
 
@@ -180,9 +185,10 @@ Split the original dataset into training (70%) and testing (30%) sets using trai
 Applying SMOTE:
 
 Used the SMOTE function from imblearn.over_sampling module to over-sample the minority class (True - approved loans) in the training set only (X_train, y_train).
+
 # Pipeline Construction and Hyperparameter Tuning for lm, SVM, RF, DT:
-Pipelines were defined for each classifier to streamline the training and evaluation process.The best KFold strategy for each classifier was determined through grid search.
-## Overall Results and Metrics Summary:
+Pipelines were defined for each classifier to streamline the training and evaluation process.The best KFold strategy for each classifier was determined through grid search. This time we added Decision Tree to observe the impact of a balanced dataset on all the models cited.
+# Results and Metrics Summary:
 
 A plot of the performance metrics for each model.
 
