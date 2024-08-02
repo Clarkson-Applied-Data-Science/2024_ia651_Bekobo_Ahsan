@@ -271,7 +271,7 @@ Importance feature are found based on the best model found . The Random Forest C
 # Testing with new data 
 ## Dataset
 
-We created random entries of 4 data to test our model. The feature values are selected randomly.
+We created random entries of 4 data to test our model, 2 from the dataset and 2 synthethic. 
 ![Screenshot 2024-08-01 113304](./Image/Screenshot%202024-08-01%20113304.png)
 
 We found that ***Random Forest Classifier is the best model*** after the grid search with SMOTE analysis. We used that model to predict on this new dataset. The result are as per the following:
@@ -280,7 +280,7 @@ We found that ***Random Forest Classifier is the best model*** after the grid se
 
 *Figure: Prediction vs Actual*
 
-Knowing the reliance of our model on credit scores, we tried to initiate increasing loan applicant income, co applicant income and other variable  with a bad credit score to see if the effect of credit score could be offset by other highly positive variables and the response is no. Credit score is a  stronger determinant than we could think in this analysis 
+Knowing the reliance of our model on credit scores, we tried to initiate an increasing loan applicant income, co applicant income and other variable  with a bad credit score to see if the effect of bad credit score could be offset by other highly positive variables  and the response is no. Credit score is a  stronger determinant than we had imagined  in this analysis. Trying to offset the impact of  a negative credit score is challenging.
 
 # Production Guidelines
 Steps:
@@ -301,7 +301,7 @@ Steps:
 -Random Forest has the highest ROC AUC both with Smote process and without smote  process, indicating the best ability to distinguish between the classes among all models. This makes it our strongest model.
 -Runner-Up: Logistic Regression performs very well in terms of accuracy and precision, making it a strong contender, especially when interpretability and simplicity are important.
 -Other Models: Both SVC and Decision Tree Classifier show good precision but fall short in recall and ROC AUC compared to Random Forest and Logistic Regression.
--The use of SMOTE has likely helped in balancing the classes, which is reflected in the relatively better precision and recall scores across all models models.
+-The use of SMOTE has likely helped in balancing the classes, which is reflected in the relatively better precision and recall scores across all models.
 ## Recommendations and Future Scope:
 * *Model Deployment*: Deploy the Decision Tree model with a depth of 3 for a straightforward and effective solution, unless there's a need for enhanced interpretability.
 
@@ -309,4 +309,9 @@ Steps:
 
 * *Credit Score Details*: Our model heavily depend on Credit score so we think Using  detailed credit score values instead of binary indicators could have been a better option for our analysis. Additionally, address the model's overreliance on credit scores, which may be a limitation due to their binary nature.
 
-* *Dataset Insights*: Gaining more in-depth information about the dataset would provide better insights and enable more informed conclusions like knowing the country or origin of the dataset information. A future project may involve comparing loan determinants in different areas.
+* *Dataset Insights and Enrichment*: Gaining more in-depth information about the dataset would provide better insights and enable more informed conclusions like knowing the country or origin of the dataset information. A future project may involve comparing loan determinants in different areas.
+
+
+
+In conclusion, this project has not only delivered a robust loan approval prediction model but groundwork for improvements in loan predictions analysis. This is a solid foundation for practical implementation in loan approval processes. Moving forward, the focus should be on refining credit score data and exploring regional variations in loan determinants, to further enhance the model's accuracy and applicability in diverse scenarios. 
+***We hope you enjoyed our machine learning journey and the insights it brings***
