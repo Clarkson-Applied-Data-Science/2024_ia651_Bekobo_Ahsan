@@ -158,6 +158,25 @@ We visualize decision tree at the best depth.
 ## Pipeline Construction and Hyperparameter Tuning for LR, SVC, RF:
 
 The introduction of streamlined pipelines for *Logistic Regression (LR), Support Vector Classification (SVC), and the Random Forest(RF) Classifier* proved to be monumental in refining the preprocessing and model fitting processes.
+To evaluate our model we used: Accuracy,F1-score, Recall, Precison, Confusion Matrix, ROC Curve, Receiver Operating Characteristic (ROC) curve and Area Under the Curve (AUC) were plotted to evaluate the trade-off between True Positive Rate (Sensitivity) and False Positive Rate (1 - Specificity).
+
+# Model training
+## Decision Tree Classifier:
+Starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries. it also gives a baseline to compare other models and the importance of hyperparameters on evaluation metrics
+
+Model Training: Utilized DecisionTreeClassifier with varying depths (1 to 20) to find optimal max_depth.
+Performance Metrics: Evaluated models based on training and test accuracy, as well as F1 scores.
+Validation: Identified the best model based on maximum test accuracy achieved.
+We visualize decision tree at the best depth.
+![output2](https://github.com/user-attachments/assets/bc71ded6-509e-4154-a04e-e4b7e0603b75)
+
+## Decision Tree with Hyperparameters and cross-validation
+
+
+
+## Pipeline Construction and Hyperparameter Tuning for lm, SVM, RF:
+
+The introduction of streamlined pipelines for Logistic Regression, SVM, and the Random Forest Classifier proved to be monumental in refining the preprocessing and model fitting processes.
 As a standout success, the advanced grid search with cross-validation was a critical step in fine-tuning the hyperparameters for each remarkable model.
 
 
