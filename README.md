@@ -3,8 +3,7 @@ Code for 2024_ia651_Bekobo_Ahsan
 #  Predictive Modeling of Loan Approval Status: A Machine Learning Approach
 ![Screenshot 2024-07-22 183831](./Image/Screenshot%202024-08-02%20110835.png)
 
- [2024_ia651_Bekobo_Ahsan](#2024-ia651-bekobo-ahsan)
-- [Predictive Modeling of Loan Approval Status: A Machine Learning Approach](#predictive-modeling-of-loan-approval-status--a-machine-learning-approach)
+ 
 - [Project overview](#project-overview)
 - [Dataset](#dataset)
   * [**Fields in the Dataset:**](#--fields-in-the-dataset---)
@@ -20,9 +19,9 @@ Code for 2024_ia651_Bekobo_Ahsan
   * [Decision Tree Classifier:](#decision-tree-classifier-)
   * [Pipeline Construction and Hyperparameter Tuning for LR, SVC, RF:](#pipeline-construction-and-hyperparameter-tuning-for-lr--svc--rf-)
 - [Results and Metrics](#results-and-metrics)
-  * [SMOTE Process](#smote-process)
-- [Pipeline Construction and Hyperparameter Tuning for LR, SVC, RF:](#pipeline-construction-and-hyperparameter-tuning-for-lr--svc--rf--1)
-- [Results and Metrics Summary:](#results-and-metrics-summary-)
+- [SMOTE Process](#smote-process)
+  * [Pipeline Construction and Hyperparameter Tuning for LR, SVC, RF:](#pipeline-construction-and-hyperparameter-tuning-for-lr--svc--rf--1)
+  * [Results and Metrics Summary:](#results-and-metrics-summary-)
 - [Feature Importance](#feature-importance)
 - [Testing with new data](#testing-with-new-data)
   * [Dataset](#dataset-1)
