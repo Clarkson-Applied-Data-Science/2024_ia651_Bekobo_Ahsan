@@ -3,6 +3,8 @@ Code for 2024_ia651_Bekobo_Ahsan
 #  Predictive Modeling of Loan Approval Status: A Machine Learning Approach
 ![Screenshot 2024-07-22 183831](https://github.com/user-attachments/assets/a2a8efaf-be86-4637-b4cd-941d909564b1)
 
+
+
 # Project overview
 
 The Loan Approval Prediction project aims to analyze a dataset containing information about loan applicants and their respective loan approval outcomes. The dataset provides valuable insights into various factors that influence the decision-making process of loan approvals. By leveraging data exploration, statistical analysis, and predictive modeling techniques, this project seeks to understand the patterns and relationships within the data to develop a predictive model for loan approval status.
@@ -37,8 +39,11 @@ Property_Area: Area where the property to be purchased is located (Urban/Semiurb
 
 Target varaiable is Loan_Status: Loan approval status (Y = Yes, N = No)
 
-# Purpose and Prediction
-The goal of this project is to predict whether a loan application will be approved (Loan_Status) based on various applicant features. This prediction is crucial for financial institutions to automate and streamline the loan approval process, ensuring efficient use of resources and improving customer satisfaction.
+# Objective and Background
+
+Loans play a significant role in economic growth. They facilitate investments and technological advancement for Businesses. At the individual level, Loans seems crucial in America. From Homwownership, Education, Car, Personal Development, loan enable individuals to pursue their dreams and achieve financial stability. A loan however is not always guaranteed despite meeting minimum requirement. Loans approval requirement can be complex.
+
+The goal of this project is to predict whether a loan application will be approved (Loan_Status) based on various applicant features. This prediction is crucial for financial institutions to automate and streamline the loan approval process, ensuring efficient use of resources and improving customer satisfaction. Moreover, we will be able to provide an analysis on key determinants to achieve loan approval.
 
 ## Process Overview
 The project involved several stages:
