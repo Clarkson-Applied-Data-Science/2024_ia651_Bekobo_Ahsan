@@ -3,6 +3,34 @@ Code for 2024_ia651_Bekobo_Ahsan
 #  Predictive Modeling of Loan Approval Status: A Machine Learning Approach
 ![Screenshot 2024-07-22 183831](./Image/Screenshot%202024-08-02%20110835.png)
 
+ [2024_ia651_Bekobo_Ahsan](#2024-ia651-bekobo-ahsan)
+- [Predictive Modeling of Loan Approval Status: A Machine Learning Approach](#predictive-modeling-of-loan-approval-status--a-machine-learning-approach)
+- [Project overview](#project-overview)
+- [Dataset](#dataset)
+  * [**Fields in the Dataset:**](#--fields-in-the-dataset---)
+- [Objectives and Background](#objectives-and-background)
+- [Data Exploration](#data-exploration)
+  * [Data Visualization](#data-visualization)
+  * [Data Cleaning](#data-cleaning)
+  * [Data Preprocessing](#data-preprocessing)
+  * [Correlation Analysis](#correlation-analysis)
+- [Model Selection and evaluation metrics](#model-selection-and-evaluation-metrics)
+  * [Evaluation Metrics:](#evaluation-metrics-)
+- [Model Training](#model-training)
+  * [Decision Tree Classifier:](#decision-tree-classifier-)
+  * [Pipeline Construction and Hyperparameter Tuning for LR, SVC, RF:](#pipeline-construction-and-hyperparameter-tuning-for-lr--svc--rf-)
+- [Results and Metrics](#results-and-metrics)
+  * [SMOTE Process](#smote-process)
+- [Pipeline Construction and Hyperparameter Tuning for LR, SVC, RF:](#pipeline-construction-and-hyperparameter-tuning-for-lr--svc--rf--1)
+- [Results and Metrics Summary:](#results-and-metrics-summary-)
+- [Feature Importance](#feature-importance)
+- [Testing with new data](#testing-with-new-data)
+  * [Dataset](#dataset-1)
+- [Production Guidelines](#production-guidelines)
+- [Conclusion and Recommendations](#conclusion-and-recommendations)
+  * [Findings:](#findings-)
+  * [Recommendations:](#recommendations-)
+
 # Project overview
 
 The Loan Approval Prediction project aims to analyze a dataset containing information about loan applicants and their respective loan approval outcomes. The dataset provides valuable insights into various factors that influence the decision-making process of loan approvals. By leveraging data exploration, statistical analysis, and predictive modeling techniques, this project seeks to understand the patterns and relationships within the data to develop a predictive model for loan approval status.
