@@ -192,7 +192,7 @@ To evaluate our model we used: Accuracy,F1-score, Recall, Precison, Confusion Ma
 Accuracy seems similar accross for logistic and SVC Model. 
 
 
-![Screenshot 2024-08-01 102253](./Image/Screenshot%202024-08-01%20093057.png)
+
 
 This is a bar plot displaying the accuracy for each model.
 ![Screenshot 2024-08-01 102324](./Image/Screenshot%202024-08-01%20102324.png)
@@ -227,6 +227,8 @@ A Confusion Matrix and ROC curve for *Logistic Regression (LR), Support Vector C
 ![Screenshot 2024-08-01 092611](./Image/Screenshot%202024-08-01%20092611.png)
 ![Screenshot 2024-08-01 093026](./Image/Screenshot%202024-08-01%20093026.png)
 
+This  is table summarizing these metrics
+![Screenshot 2024-08-01 102253](./Image/Screenshot%202024-08-01%20093057.png)
 A bar plot of the accuracy for each model and performance graph displaying all metrics.
 
 
