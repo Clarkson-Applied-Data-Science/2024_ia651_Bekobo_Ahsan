@@ -238,7 +238,6 @@ A bar plot of the accuracy for each model and performance graph displaying all m
 # Feature Importance
 Importance feature are found based on the best model found . The Random Forest Classifier has  the highest ROC AUC indicating the best ability to distinguish between the classes among all models. From the feature importance We see that our model heavily relies on credit history which  has the highest importance. Then Applicant Income, Loan Ammount, Coapplicant Income, Dependents follows that.
 
-Image/important_features.pngImage
 
 
 # Testing with new data 
@@ -253,7 +252,7 @@ We found that ***Random Forest Classifier is the best model*** after the grid se
 
 *Figure: Prediction vs Actual*
 
-It seems that the result is as expected.
+Knowing the reliance of our model on credit scores, we tried to initiate increasing loan applicant income, co applicant income and other variable  with a bad credit score to see if the effect of credit score could be offset by other highly positive variables and the response is no. Credit score is a  stronger determinant than we could think in this analysis 
 
 # Production Guidelines
 Steps:
@@ -276,8 +275,8 @@ Random Forest has the highest ROC AUC both with Smote process and without smote 
 ## Recommendations:
 * *Model Deployment*: Deploy the Decision Tree model with a depth of 3 for a straightforward and effective solution, unless there's a need for enhanced interpretability.
 
-* *Income Integration*: Merge the applicant’s income with variables that exhibit a strong correlation to improve the model.
+* *Income Integration and feature engeneering*: Merge the applicant’s income with variables that exhibit a strong correlation to improve the model. A new variable could have been created to reduce correlation betweem applicant income and co applicant income or other featurex
 
-* *Credit Score Details*: Use detailed credit score values instead of binary indicators. Additionally, address the model's overreliance on credit scores, which may be a limitation due to their binary nature.
+* *Credit Score Details*: Our model heavily depend on Credit score so we think Using  detailed credit score values instead of binary indicators could have been a better option for our analysis. Additionally, address the model's overreliance on credit scores, which may be a limitation due to their binary nature.
 
-* *Dataset Insights*: Gaining more in-depth information about the dataset would provide better insights and enable more informed conclusions.
+* *Dataset Insights*: Gaining more in-depth information about the dataset would provide better insights and enable more informed conclusions like knowing the country or origin of the dataset information. A future project may involve comparing loan determinants in different areas.
