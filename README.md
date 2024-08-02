@@ -263,7 +263,7 @@ A bar plot of the accuracy for each model and performance graph displaying all m
 
 
 # Feature Importance
-Importance feature are found based on the best model found . The Random Forest Classifier has  the highest ROC AUC indicating the best ability to distinguish between the classes among all models. From the feature importance We see that our model heavily relies on credit history which  has the highest importance. Then Applicant Income, Loan Ammount, Coapplicant Income, Dependents follows that.
+Importance feature are found based on the best model found . The Random Forest Classifier has  the highest ROC AUC indicating the best ability to distinguish between the classes among all models. From the feature importance ***We see that our model heavily relies on credit history which  has the highest importance***. Then Applicant Income, Loan Ammount, Coapplicant Income, Dependents follows that. In summary, credit history is very important for any loan applicant.
 
 ![important_features](./Image/important_features.png)
 
@@ -314,4 +314,4 @@ Steps:
 
 
 In conclusion, this project has not only delivered a robust loan approval prediction model but groundwork for improvements in loan predictions analysis. This is a solid foundation for practical implementation in loan approval processes. Moving forward, the focus should be on refining credit score data and exploring regional variations in loan determinants, to further enhance the model's accuracy and applicability in diverse scenarios. 
-***We hope you enjoyed our machine learning journey and the insights it brings***
+***We hope you enjoyed our machine learning journey and the insights it brings on loan approval strategies and determinants***
