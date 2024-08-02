@@ -5,28 +5,8 @@ Code for 2024_ia651_Bekobo_Ahsan
 
 # Project overview
 
-Loans are vital for economic health and growth. They:
-
-* Stimulate Economic Growth: Provide capital for business investments and consumer purchases.
-* Support Business Development: Fund startups, expansions, and working capital.
-* Create Jobs: Contribute to employment opportunities and skill development.
-* Enable Home Ownership: Boost the real estate market and help individuals build wealth.
-* Fund Infrastructure: Support public projects like roads and bridges.
-* Enhance Financial Stability: Offer access to credit and manage financial fluctuations.
-* Promote Innovation: Finance research and development efforts.
-* Increase Efficiency: Allocate resources effectively to high-potential projects.
-
-Predicting loan approval is essential for:
-
-* Managing Risk: Reduces defaults and assesses creditworthiness.
-* Improving Efficiency: Speeds up and automates the approval process.
-Enhancing Customer Experience: Provides faster decisions and personalized offers.
-* Ensuring Compliance: Adheres to regulations and promotes transparency.
-* Maintaining Financial Stability: Manages risk exposure and optimizes the loan portfolio.
-* Gaining Competitive Advantage: Attracts customers and improves loan offerings.
-* Detecting Fraud: Identifies suspicious applications.
-
 The Loan Approval Prediction project aims to analyze a dataset containing information about loan applicants and their respective loan approval outcomes. The dataset provides valuable insights into various factors that influence the decision-making process of loan approvals. By leveraging data exploration, statistical analysis, and predictive modeling techniques, this project seeks to understand the patterns and relationships within the data to develop a predictive model for loan approval status.
+
 # Dataset
 The dataset used in this project is sourced from Kaggle, "LoanApprovalPrediction.csv". It contains information about loan applicants, including demographic data (gender, marital status), financial details (income, loan amount), and credit history. The dataset consists of 598 entries and 13 columns after removing duplicates.
 
@@ -58,8 +38,23 @@ The dataset used in this project is sourced from Kaggle, "LoanApprovalPrediction
 
 Target varaiable is *Loan_Status*: Loan approval status (Y = Yes, N = No)
 
-# Purpose and Prediction
-The goal of this project is to predict whether a loan application will be approved (Loan_Status) based on various applicant features. This prediction is crucial for financial institutions to automate and streamline the loan approval process, ensuring efficient use of resources and improving customer satisfaction.
+# Objectives and Background
+
+Loans are vital for economic health and growth. They:
+
+* Stimulate Economic Growth: Provide capital for business investments and consumer purchases.
+* Support Business Development: Fund startups, expansions, and working capital.
+* Create Jobs: Contribute to employment opportunities and skill development.
+* Enable Home Ownership: Boost the real estate market and help individuals build wealth.
+* Fund Infrastructure: Support public projects like roads and bridges.
+* Enhance Financial Stability: Offer access to credit and manage financial fluctuations.
+* Promote Innovation: Finance research and development efforts.
+* Increase Efficiency: Allocate resources effectively to high-potential projects.
+
+At the individual level, Loans seems crucial in America. From Homwownership, Education, Car, Personal Development, loan enable individuals to pursue their dreams and achieve financial stability. A loan however is not always guaranteed despite meeting minimum requirement. Loans approval requirements can be complex.
+
+The goal of this project is to predict whether a loan application will be approved (Loan_Status) based on various applicant features. This prediction is crucial for financial institutions to automate and streamline the loan approval process, ensuring efficient use of resources and improving customer satisfaction. Also it will ensure compliance, avoid fraud  and promotes Transparency
+
 
 # Data Exploration
 ## Data Visualization
@@ -142,7 +137,7 @@ To evaluate our model we used: *Accuracy,F1-score, Recall, Precison, Confusion M
 
 # Model Training
 ## Decision Tree Classifier:
-Starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries. it also gives a baseline to compare other models and the importance of hyperparameters on evaluation metrics
+Starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries of the loan datset. it also gives a baseline to compare other models and the importance of hyperparameters on evaluation metrics
 
 * **Model Training:** Utilized DecisionTreeClassifier with varying depths (1 to 20) to find optimal max_depth.
 * **Performance Metrics:** Evaluated models based on training and test accuracy, as well as F1 scores.
@@ -159,25 +154,6 @@ We visualize decision tree at the best depth.
 
 The introduction of streamlined pipelines for *Logistic Regression (LR), Support Vector Classification (SVC), and the Random Forest(RF) Classifier* proved to be monumental in refining the preprocessing and model fitting processes.
 To evaluate our model we used: Accuracy,F1-score, Recall, Precison, Confusion Matrix, ROC Curve, Receiver Operating Characteristic (ROC) curve and Area Under the Curve (AUC) were plotted to evaluate the trade-off between True Positive Rate (Sensitivity) and False Positive Rate (1 - Specificity).
-
-# Model training
-## Decision Tree Classifier:
-Starting with a Decision Tree model not only provides a foundational understanding of the data but also assists in visualizing and interpreting the decision boundaries. it also gives a baseline to compare other models and the importance of hyperparameters on evaluation metrics
-
-Model Training: Utilized DecisionTreeClassifier with varying depths (1 to 20) to find optimal max_depth.
-Performance Metrics: Evaluated models based on training and test accuracy, as well as F1 scores.
-Validation: Identified the best model based on maximum test accuracy achieved.
-We visualize decision tree at the best depth.
-![output2](https://github.com/user-attachments/assets/bc71ded6-509e-4154-a04e-e4b7e0603b75)
-
-## Decision Tree with Hyperparameters and cross-validation
-
-
-
-## Pipeline Construction and Hyperparameter Tuning for lm, SVM, RF:
-
-The introduction of streamlined pipelines for Logistic Regression, SVM, and the Random Forest Classifier proved to be monumental in refining the preprocessing and model fitting processes.
-As a standout success, the advanced grid search with cross-validation was a critical step in fine-tuning the hyperparameters for each remarkable model.
 
 
 1. Best Model Hyperparameters
@@ -258,7 +234,7 @@ A bar plot of the accuracy for each model and performance graph displaying all m
 
 
 # Feature Importance
-Importance feature are found based on the best model found via grid search which is The Random Forest Classifier. We see that credit history has the highest importance. Then Applicant Income, Loan Ammount, Coapplicant Income, Dependents follows that.
+Importance feature are found based on the best model found . The Random Forest Classifier has  the highest ROC AUC indicating the best ability to distinguish between the classes among all models. From the feature importance We see that our model heavily relies on credit history which  has the highest importance. Then Applicant Income, Loan Ammount, Coapplicant Income, Dependents follows that.
 ![important_features](image/important_features.png)
 
 # Testing with new data 
@@ -291,8 +267,7 @@ Steps:
 
 # Conclusion and Recommendations
 ## Findings:
-hyperparameters does not always increase performance. The Decision Tree model at depth 3 balanced simplicity with performance effectively.
-Logistic Regression and SVC models demonstrated competitive performance with optimal parameter tuning.
+Random Forest has the highest ROC AUC both with Smote process and without smote  process, indicating the best ability to distinguish between the classes among all models. This makes it a strong candidate for the best overall model.
 
 ## Recommendations:
 * *Model Deployment*: Deploy the Decision Tree model with a depth of 3 for a straightforward and effective solution, unless there's a need for enhanced interpretability.
