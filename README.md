@@ -298,9 +298,11 @@ Steps:
 
 # Conclusion and Recommendations
 ## Findings:
-Random Forest has the highest ROC AUC both with Smote process and without smote  process, indicating the best ability to distinguish between the classes among all models. This makes it our strongest model.
-
-## Recommendations:
+-Random Forest has the highest ROC AUC both with Smote process and without smote  process, indicating the best ability to distinguish between the classes among all models. This makes it our strongest model.
+-Runner-Up: Logistic Regression performs very well in terms of accuracy and precision, making it a strong contender, especially when interpretability and simplicity are important.
+-Other Models: Both SVC and Decision Tree Classifier show good precision but fall short in recall and ROC AUC compared to Random Forest and Logistic Regression.
+-The use of SMOTE has likely helped in balancing the classes, which is reflected in the relatively better precision and recall scores across all models models.
+## Recommendations and Future Scope:
 * *Model Deployment*: Deploy the Decision Tree model with a depth of 3 for a straightforward and effective solution, unless there's a need for enhanced interpretability.
 
 * *Income Integration and feature engeneering*: Merge the applicant’s income with variables that exhibit a strong correlation to improve the model. A new variable could have been created to reduce correlation betweem applicant income and co applicant income or other featurex
