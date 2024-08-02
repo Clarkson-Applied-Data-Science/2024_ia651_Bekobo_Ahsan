@@ -237,6 +237,7 @@ A bar plot of the accuracy for each model and performance graph displaying all m
 
 # Feature Importance
 Importance feature are found based on the best model found . The Random Forest Classifier has  the highest ROC AUC indicating the best ability to distinguish between the classes among all models. From the feature importance We see that our model heavily relies on credit history which  has the highest importance. Then Applicant Income, Loan Ammount, Coapplicant Income, Dependents follows that.
+
 ![important_features](image/important_features.png)
 
 # Testing with new data 
