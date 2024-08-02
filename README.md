@@ -270,7 +270,7 @@ Steps:
 
 # Conclusion and Recommendations
 ## Findings:
-Random Forest has the highest ROC AUC both with Smote process and without smote  process, indicating the best ability to distinguish between the classes among all models. This makes it a strong candidate for the best overall model.
+Random Forest has the highest ROC AUC both with Smote process and without smote  process, indicating the best ability to distinguish between the classes among all models. This makes it our strongest model.
 
 ## Recommendations:
 * *Model Deployment*: Deploy the Decision Tree model with a depth of 3 for a straightforward and effective solution, unless there's a need for enhanced interpretability.
